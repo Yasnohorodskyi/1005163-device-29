@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Девайс</title>
+    <base href="https://htmlacademy-htmlcss.github.io/1005163-device-29/3/">
+</head>
+
+  <body>
+    <!-- Шапка  -->
+    <header>
+      <a>
+        <img src="img/logo.svg" width="163" height="35" alt="Логотип Девайс" />
+      </a>
+      <ul>
+        <li><input type="text" placeholder="Поиск по сайту" /></li>
+        <li><a href="">Войти</a></li>
+        <li><a href="">Сравнить</a></li>
+        <li><a href="">Корзина</a></li>
+      </ul>
+      <nav>
+        <ul>
+          <li><a href="">Каталог товаров</a></li>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Гарантия</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- / Шапка  -->
+
+    <main>
+      <!-- Каталог -->
+      <section>
+        <!-- Шапка каталога -->
+        <div>
+          <h1 class="visually-hidden">Каталог товаров</h1>
+          <h2>Моноподы для селфи</h2>
+          <ul>
+            <li>Главная</li>
+            <li>Каталог товаров</li>
+            <li>Моноподы для селфи</li>
+          </ul>
+        </div>
+        <!-- / Шапка каталога -->
+
+        <!-- Шапка фильтра и сортировки -->
+        <div>
+          <span>Фильтр:</span>
+          <span>Cортировка:</span>
+          <ul>
+            <li>По цене</li>
+            <li>По типу</li>
+            <li>По популярности</li>
+          </ul>
+        </div>
+        <!-- / Шапка фильтра и сортировки -->
+
+        <!-- Блок с фильтрами -->
+        <div>
+          <p>Стоимость</p>
+          <div id="slider">от 0 до 5000</div>
+          <p>Цвет</p>
+          <ul>
+            <li><input type="checkbox" />Чёрный</li>
+            <li><input type="checkbox" />Белый</li>
+            <li><input type="checkbox" />Синий</li>
+            <li><input type="checkbox" />Красный</li>
+            <li><input type="checkbox" />Розовый</li>
+          </ul>
+          <p>Bluetooth</p>
+          <div>
+            <div>
+              <input
+                id="BluetoothOn"
+                type="radio"
+                name="radio"
+                value="off"
+                checked
+              />
+              <label for="BluetoothOn">Есть</label>
+            </div>
+            <div>
+              <input id="BluetoothOff" type="radio" name="radio" value="on" />
+              <label for="BluetoothOff">Нет</label>
+            </div>
+          </div>
+          <button>Показать</button>
+        </div>
+        <!-- /Блок с фильтрами -->
+
+        <!-- Блок с карточками товара -->
+        <div>
+          <div>
+            <img
+              src="https://via.placeholder.com/360x380"
+              alt="Любительская селфи-палка"
+            />
+            <div>
+              <a href="">Любительская селфи-палка<span>500 руб.</span></a>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://via.placeholder.com/360x380"
+              alt="Профессиональная селфи-палка"
+            />
+            <div>
+              <a href="">Профессиональная селфи-палка<span>1 500 руб.</span></a>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://via.placeholder.com/360x380"
+              alt="Непотопляемая селфи-палка"
+            />
+            <div>
+              <a href="">Непотопляемая селфи-палка<span>2 500 руб.</span></a>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://via.placeholder.com/360x380"
+              alt="Селфи-палка «Следуй за мной"
+            />
+            <div>
+              <a href="">Селфи-палка «Следуй за мной»<span>4 900 руб.</span></a>
+            </div>
+          </div>
+        </div>
+        <!-- /Блок с карточками товара  -->
+
+        <!-- Блок с навигацией страниц каталога -->
+        <div>
+          <a href="">Назад</a>
+          <ul>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+          </ul>
+          <a href="">Вперед</a>
+        </div>
+        <!-- /Блок с навигацией страниц каталога -->
+      </section>
+
+      <!-- / Каталог -->
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+      <div>
+        <a href=""><img src="img/logo.svg" alt="Логотип Девайс" /></a>
+        <address>г. Москва, ул. Строителей, 15</address>
+      </div>
+      <div>
+        <ul>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Гарантия</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        <ul>
+          <li>
+            <a href=""
+              ><img src="https://via.placeholder.com/32x32" alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="https://via.placeholder.com/32x32" alt="instagram"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="https://via.placeholder.com/32x32" alt="twitter"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><a href="">Войти</a></li>
+          <li><a href="">Сравнить</a></li>
+          <li><a href="">Корзина</a></li>
+        </ul>
+        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        <a href="">
+          <img
+            src="https://via.placeholder.com/27x34"
+            alt="Логотип HTML academy"
+          />Logo
+        </a>
+      </div>
+    </footer>
+    <!-- / Подвал -->
+  </body>
+</html>
