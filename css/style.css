@@ -282,3 +282,7 @@ body {
 .footer__social__list {
   list-style-type: none;
 }
+
+.footer__social__logo {
+  text-decoration: none;
+}
