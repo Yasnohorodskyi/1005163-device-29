@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Ильнар Шангареев](https://up.htmlacademy.ru/htmlcss/29/user/1005163).
-* Наставник: [Атмир Атаев](https://htmlacademy.ru/profile/atmirataev).
+- Студент: [Ильнар Шангареев](https://up.htmlacademy.ru/htmlcss/29/user/1005163).
+- Наставник: [Анна Пономарёва](https://htmlacademy.ru/profile/atmirataev).
 
 ---
 
