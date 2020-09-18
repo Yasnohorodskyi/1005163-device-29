@@ -68,7 +68,7 @@ body {
   margin: -1px;
 }
 
-.main__button {
+.button {
   font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -82,12 +82,12 @@ body {
   padding: 0px 43px;
 }
 
-.main__button:hover {
+.button:hover {
   padding: 9px 43px;
   transition: 0.1s;
 }
 
-.main__button:active {
+.button:active {
   padding: 9px 43px;
   opacity: 0.3;
 }
