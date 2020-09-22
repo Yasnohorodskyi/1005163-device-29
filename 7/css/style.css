@@ -308,10 +308,9 @@ body {
   list-style-type: none;
 }
 
-.about {
+.about__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: var(--basic-grey-light);
 }
 
 .about__info-title {
