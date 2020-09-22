@@ -59,6 +59,12 @@ body {
   font-weight: 300;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
 }
 .visually-hidden {
   position: absolute;
@@ -93,6 +99,14 @@ body {
 }
 
 .header {
+  width: 1160px;
+  padding: 22px 0;
+  margin: 0 auto;
+}
+
+.header__container {
+  min-height: 344px;
+  padding: 0 60px;
   background-color: var(--special-yellow);
 }
 
@@ -109,6 +123,7 @@ body {
 
 .header__list {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .header__list-link {
@@ -152,6 +167,7 @@ body {
 }
 
 .header__nav__list {
+  padding-left: 0;
   list-style-type: none;
   color: var(--basic-black);
 }
@@ -173,6 +189,14 @@ body {
   text-transform: uppercase;
   color: var(--basic-black);
   text-decoration: none;
+}
+
+.promo__box {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 89px;
+  padding-right: 47px;
 }
 
 .promo__info-num {
@@ -239,6 +263,14 @@ body {
   opacity: 0.3;
 }
 
+.features {
+  background-color: var(--basic-grey-light);
+}
+
+.features__list {
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
 .features__list-item {
   font-weight: 800;
   font-size: 18px;
@@ -277,6 +309,8 @@ body {
 }
 
 .about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: var(--basic-grey-light);
 }
 
@@ -605,6 +639,15 @@ body {
   background-color: var(--basic-dark);
 }
 
+.footer__nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer__nav-list {
+  justify-self: end;
+}
+
 .footer__nav-item {
   list-style-type: none;
 }
@@ -620,6 +663,11 @@ body {
 
 .footer__nav-link:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.footer__features {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer__features-address {
@@ -653,15 +701,23 @@ body {
 }
 
 .footer__features-phone {
+  justify-self: end;
   text-decoration: none;
 
   color: var(--basic-white);
 }
 
+.footer__social {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .footer__social-list {
+  justify-self: end;
   list-style-type: none;
 }
 
 .footer__social-logo {
+  justify-self: end;
   text-decoration: none;
 }
