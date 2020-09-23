@@ -166,21 +166,21 @@ body {
   border-bottom: solid 1px var(--basic-black);
 }
 
-.header__nav__list {
+.header__nav-list {
   padding-left: 0;
   list-style-type: none;
   color: var(--basic-black);
 }
 
-.header__nav__list-item:hover {
+.header__nav-item:hover {
   opacity: 0.6;
 }
 
-.header__nav__list-item:active {
+.header__nav-item:active {
   opacity: 0.3;
 }
 
-.header__nav__list-link {
+.header__nav-link {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -364,7 +364,7 @@ body {
 }
 
 .catalog__header-title {
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 47px;
@@ -409,7 +409,7 @@ body {
 }
 
 .filter__title {
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -420,7 +420,7 @@ body {
 }
 
 .filter__cost {
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
@@ -432,7 +432,7 @@ body {
 }
 
 .filter__cost-value {
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -440,7 +440,7 @@ body {
 }
 
 .filter__color {
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
@@ -492,7 +492,7 @@ body {
 }
 
 .filter__bluetooth-title {
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
@@ -562,7 +562,7 @@ body {
 }
 
 .sorting__title {
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -608,7 +608,7 @@ body {
 }
 
 .products__item-text {
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -619,7 +619,7 @@ body {
 }
 
 .products__item-cost {
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -636,7 +636,7 @@ body {
 }
 
 .products__button {
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -676,7 +676,7 @@ body {
   text-decoration: none;
   color: var(--basic-black);
   opacity: 0.3;
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
