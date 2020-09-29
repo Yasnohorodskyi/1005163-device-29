@@ -67,9 +67,9 @@ body {
   margin: 0 auto;
 }
 
-.main-page {
+/* .main-page {
   margin-top: -146px;
-}
+} */
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -122,6 +122,7 @@ body {
 
 .header {
   width: 1160px;
+  max-height: 300px;
   padding: 22px 0;
   margin: 0 auto;
   margin-top: 18px;
@@ -134,7 +135,7 @@ body {
 }
 
 .header-catalog__container {
-  height: 283px;
+  height: 186px;
 }
 
 .header__logo {
@@ -262,13 +263,13 @@ body {
 }
 
 .header__menu {
-  display: none;
+  visibility: hidden;
   width: 1040px;
   height: 146px;
   display: flex;
   flex-direction: row;
-  position: relative;
-  bottom: 148px;
+  position: absolute;
+  /* bottom: 148px; */
   margin: 0;
   padding: 0 60px;
   z-index: 5;
@@ -455,8 +456,9 @@ body {
   /* margin-bottom: 40px; */
 }
 
-/* .features__list-item:hover {
-} */
+.features__list-item:before {
+  width: 160px;
+}
 
 .features__list-item:active:before {
   width: 240px;
@@ -660,8 +662,7 @@ body {
 
 .filter {
   margin-left: auto;
-  /* min-width: 468px; */
-  padding-right: 60px;
+  padding-right: 43px;
 }
 
 .filter__container {
@@ -824,10 +825,12 @@ body {
 }
 
 .filter__button-show {
+  cursor: pointer;
   margin-top: 26px;
-  padding: 0px 42px;
+  padding: 0;
   outline: none;
   border: none;
+  background-color: var(--basic-grey-light);
 }
 
 .container-products {
