@@ -416,15 +416,14 @@ body {
 .features {
   background-color: var(--basic-grey-light);
   background-image: linear-gradient(#ffffff 37%, var(--basic-grey-light) 37%);
-  padding-top: 70px;
-  padding-bottom: 68px;
+  padding-top: 116px;
+  padding-bottom: 115px;
   /* padding-top: 80px; */
 }
 
 .features__container {
   display: flex;
   flex-direction: row;
-  height: 320px;
 }
 
 .features__list {
@@ -433,7 +432,7 @@ body {
   flex-direction: column;
   list-style-type: none;
   width: 310px;
-  margin-top: 87px;
+  margin-top: 41px;
 
   /* border-right: solid 7px black; */
 }
@@ -495,6 +494,7 @@ body {
   line-height: 58px;
   letter-spacing: 0.2em;
   margin-bottom: 41px;
+  margin-top: 0px;
 }
 
 .features__info-desc {
