@@ -96,8 +96,8 @@
                 как Бен Стиллер!
               </p>
               <p class="promo__info-text">
-                Самая длинная палка для селфи доступна в нашем магазине. Восемь
-                (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                Самая длинная палка для селфи доступна в нашем магазине. <br />
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
               </p>
               <a class="promo__info-link button" href="">Подробнее</a>
               <table class="promo__info-desc">
@@ -207,25 +207,45 @@
         </ul>
       </section>
       <!-- Популярное -->
-
       <!-- Доставка, гарантия, кредит -->
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="features__container container">
-          <div class="features__list">
-            <label
-              class="button features__list-item features__list-item--delivery"
-              ><input type="radio" />Доставка</label
-            >
-            <label
-              class="button features__list-item features__list-item--guarantee"
-              ><input type="radio" />Гарантия</label
-            >
-            <label
-              class="button features__list-item features__list-item--credit"
-              ><input type="radio" />Кредит</label
-            >
-          </div>
+          <ul class="features__list">
+            <li class="features__list-item">
+              <input
+                type="radio"
+                class="features__list-radio features__list-item--delivery"
+                id="features-delivery"
+                name="features-group"
+                ;
+                checked
+              />
+              <label for="features-delivery">Доставка</label>
+            </li>
+
+            <li class="features__list-item">
+              <input
+                type="radio"
+                class="features__list-radio features__list-item--guarantee"
+                id="features-guarantee"
+                name="features-group"
+                ;
+              />
+              <label for="features-guarantee">Гарантия</label>
+            </li>
+
+            <li class="features__list-item">
+              <input
+                type="radio"
+                class="features__list-radio features__list-item--credit"
+                id="features-credit"
+                name="features-group"
+                ;
+              />
+              <label for="features-credit">Кредит</label>
+            </li>
+          </ul>
           <div class="features__info-box">
             <div class="features__info features__info--delivery">
               <h3 class="features__info-title">Доставка</h3>
@@ -422,10 +442,7 @@
             </li>
           </ul>
           <a class="footer__social-logo" href="">
-            <img
-              src="https://via.placeholder.com/27x34"
-              alt="Логотип HTML academy"
-            />
+            <img src="img/logo-htmlacademy.svg" alt="Логотип HTML academy" />
           </a>
         </div>
       </div>
