@@ -41,6 +41,20 @@
           <ul class="header__nav-list">
             <li class="header__nav-item">
               <a class="header__nav-link" href="">Каталог&nbsp;товаров</a>
+              <div class="header__menu container">
+                <ul class="header__menu-list">
+                  <li class="header__menu-item">Виртуальная реальность</li>
+                  <li class="header__menu-item">Моноподы для селфи</li>
+                  <li class="header__menu-item">Экшн-камеры</li>
+                </ul>
+                <ul class="header__menu-list">
+                  <li class="header__menu-item">Фитнес-браслеты</li>
+                  <li class="header__menu-item">Умные часы</li>
+                </ul>
+                <ul class="header__menu-list">
+                  <li class="header__menu-item">Квадрокоптер</li>
+                </ul>
+              </div>
             </li>
             <li class="header__nav-item">
               <a class="header__nav-link" href="">Доставка</a>
@@ -53,20 +67,7 @@
             </li>
           </ul>
         </nav>
-        <div class="header__menu container">
-          <ul class="header__menu-list">
-            <li class="header__menu-item">Виртуальная реальность</li>
-            <li class="header__menu-item">Моноподы для селфи</li>
-            <li class="header__menu-item">Экшн-камеры</li>
-          </ul>
-          <ul class="header__menu-list">
-            <li class="header__menu-item">Фитнес-&nbsp;браслеты</li>
-            <li class="header__menu-item">Умные часы</li>
-          </ul>
-          <ul class="header__menu-list">
-            <li class="header__menu-item">Квадрокоптер</li>
-          </ul>
-        </div>
+
         <!-- /.header__menu -->
       </div>
       <!-- /.container -->
@@ -80,7 +81,7 @@
         <div class="promo__container">
           <h2 class="visually-hidden">Промо товары</h2>
           <!-- Слайд селфипалка -->
-          <div class="promo__box promo__box--1">
+          <div class="promo__box promo__box--current promo__box--1">
             <img
               class="promo__pic"
               width="384"
@@ -178,6 +179,16 @@
           </div>
           <!-- / Слайд квадрокоптер  -->
         </div>
+        <div class="promo__box-controls">
+          <button
+            class="button__current"
+            type="button"
+            aria-label="Первый слайд"
+          ></button>
+          <button type="button" aria-label="Второй слайд"></button>
+          <button type="button" aria-label="Третий слайд"></button>
+        </div>
+        <!-- /.promo__box-controls -->
         <!-- /.promo__container -->
       </section>
       <!-- / Слайдер -->
