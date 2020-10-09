@@ -27,7 +27,7 @@
             />
             <input class="header__list-button" type="button" value="Найти" />
           </li>
-          <li class="header__list-item">
+          <li class="header__list-item header__list-login">
             <a class="header__list-link" href="">Войти</a>
           </li>
           <li class="header__list-item">
@@ -41,6 +41,20 @@
           <ul class="header__nav-list">
             <li class="header__nav-item">
               <a class="header__nav-link" href="">Каталог&nbsp;товаров</a>
+              <div class="header__menu container">
+                <ul class="header__menu-list">
+                  <li class="header__menu-item">Виртуальная реальность</li>
+                  <li class="header__menu-item">Моноподы для селфи</li>
+                  <li class="header__menu-item">Экшн-камеры</li>
+                </ul>
+                <ul class="header__menu-list">
+                  <li class="header__menu-item">Фитнес-браслеты</li>
+                  <li class="header__menu-item">Умные часы</li>
+                </ul>
+                <ul class="header__menu-list">
+                  <li class="header__menu-item">Квадрокоптер</li>
+                </ul>
+              </div>
             </li>
             <li class="header__nav-item">
               <a class="header__nav-link" href="">Доставка</a>
@@ -53,20 +67,7 @@
             </li>
           </ul>
         </nav>
-        <div class="header__menu container">
-          <ul class="header__menu-list">
-            <li class="header__menu-item">Виртуальная реальность</li>
-            <li class="header__menu-item">Моноподы для селфи</li>
-            <li class="header__menu-item">Экшн-камеры</li>
-          </ul>
-          <ul class="header__menu-list">
-            <li class="header__menu-item">Фитнес-&nbsp;браслеты</li>
-            <li class="header__menu-item">Умные часы</li>
-          </ul>
-          <ul class="header__menu-list">
-            <li class="header__menu-item">Квадрокоптер</li>
-          </ul>
-        </div>
+
         <!-- /.header__menu -->
       </div>
       <!-- /.container -->
@@ -80,7 +81,7 @@
         <div class="promo__container">
           <h2 class="visually-hidden">Промо товары</h2>
           <!-- Слайд селфипалка -->
-          <div class="promo__box promo__box--1">
+          <div class="promo__box promo__box--current promo__box--1">
             <img
               class="promo__pic"
               width="384"
@@ -96,8 +97,8 @@
                 как Бен Стиллер!
               </p>
               <p class="promo__info-text">
-                Самая длинная палка для селфи доступна в нашем магазине. Восемь
-                (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                Самая длинная палка для селфи доступна в нашем магазине. <br />
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
               </p>
               <a class="promo__info-link button" href="">Подробнее</a>
               <table class="promo__info-desc">
@@ -178,6 +179,16 @@
           </div>
           <!-- / Слайд квадрокоптер  -->
         </div>
+        <div class="promo__box-controls">
+          <button
+            class="button__current"
+            type="button"
+            aria-label="Первый слайд"
+          ></button>
+          <button type="button" aria-label="Второй слайд"></button>
+          <button type="button" aria-label="Третий слайд"></button>
+        </div>
+        <!-- /.promo__box-controls -->
         <!-- /.promo__container -->
       </section>
       <!-- / Слайдер -->
@@ -207,25 +218,45 @@
         </ul>
       </section>
       <!-- Популярное -->
-
       <!-- Доставка, гарантия, кредит -->
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="features__container container">
-          <div class="features__list">
-            <label
-              class="button features__list-item features__list-item--delivery"
-              ><input type="radio" />Доставка</label
-            >
-            <label
-              class="button features__list-item features__list-item--guarantee"
-              ><input type="radio" />Гарантия</label
-            >
-            <label
-              class="button features__list-item features__list-item--credit"
-              ><input type="radio" />Кредит</label
-            >
-          </div>
+          <ul class="features__list">
+            <li class="features__list-item">
+              <input
+                type="radio"
+                class="features__list-radio features__list-item--delivery"
+                id="features-delivery"
+                name="features-group"
+                ;
+                checked
+              />
+              <label for="features-delivery">Доставка</label>
+            </li>
+
+            <li class="features__list-item">
+              <input
+                type="radio"
+                class="features__list-radio features__list-item--guarantee"
+                id="features-guarantee"
+                name="features-group"
+                ;
+              />
+              <label for="features-guarantee">Гарантия</label>
+            </li>
+
+            <li class="features__list-item">
+              <input
+                type="radio"
+                class="features__list-radio features__list-item--credit"
+                id="features-credit"
+                name="features-group"
+                ;
+              />
+              <label for="features-credit">Кредит</label>
+            </li>
+          </ul>
           <div class="features__info-box">
             <div class="features__info features__info--delivery">
               <h3 class="features__info-title">Доставка</h3>
@@ -362,9 +393,11 @@
               <a class="footer__nav-link" href="">Войти</a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link" href="">Сравнить</a>
+              <a class="footer__nav-link footer__nav-compare" href=""
+                >Сравнить</a
+              >
             </li>
-            <li class="footer__nav-item">
+            <li class="footer__nav-item footer__nav-cart">
               <a class="footer__nav-link" href="">Корзина</a>
             </li>
           </ul>
@@ -422,14 +455,65 @@
             </li>
           </ul>
           <a class="footer__social-logo" href="">
-            <img
-              src="https://via.placeholder.com/27x34"
-              alt="Логотип HTML academy"
-            />
+            <img src="img/logo-htmlacademy.svg" alt="Логотип HTML academy" />
           </a>
         </div>
       </div>
       <!-- /.container -->
     </footer>
+    <section class="modal modal__write-us">
+      <h2 class="visually-hidden">Написать нам</h2>
+      <form action="" method="GET">
+        <div class="modal__box">
+          <label for="modalUserName">Ваше имя:</label>
+          <input
+            id="modalUserName"
+            type="text"
+            name="username"
+            placeholder="Имя Фамилия"
+          />
+        </div>
+        <!-- /.moda__box -->
+        <div class="modal__box">
+          <label for="modalEmail">Ваш e-mail:</label>
+          <input
+            id="modalEmail"
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+          />
+        </div>
+        <!-- /.modal__box -->
+        <div class="modal__box">
+          <p class="modal__box-title">Текст письма:</p>
+          <textarea
+            class="modal__box-textarea"
+            name="posttext"
+            id="modalText"
+            cols="30"
+            rows="8"
+          >
+В свободной форме</textarea
+          >
+        </div>
+        <!-- /.modal__box -->
+
+        <input class="button modal-submit" type="submit" value="Отправить" />
+      </form>
+      <button class="modal-close" type="button"></button>
+    </section>
+    <!-- /.modal__write-us -->
+    <section class="modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1602258111911!5m2!1sru!2sru"
+        width="960"
+        height="560"
+        allowfullscreen=""
+        title="Офис компании по адресу ул. Строителей 15, Москва"
+      ></iframe>
+      <button class="modal-close" type="button"></button>
+    </section>
+    <!-- /.modal-map -->
   </body>
 </html>
