@@ -358,6 +358,8 @@ body {
   margin-left: 15px;
   background-image: url("../img/icon_plus.svg");
   cursor: pointer;
+  right: -35px;
+  top: 0;
 }
 
 .header__nav-item:nth-child(1):hover > div {
@@ -366,7 +368,7 @@ body {
 
 .header__nav-item:nth-child(2) {
   margin-right: 33px;
-  margin-left: 37px;
+  margin-left: 10px;
   letter-spacing: 0.24em;
 }
 
@@ -395,6 +397,10 @@ body {
   text-transform: uppercase;
   color: var(--basic-black);
   text-decoration: none;
+}
+
+.header__nav-item:nth-child(1) .header__nav-link {
+  letter-spacing: 0.2em;
 }
 
 .header__menu {
@@ -840,7 +846,7 @@ body {
 }
 
 .features__info-desc {
-  line-height: 28px;
+  line-height: 30px;
   letter-spacing: 0.1em;
 }
 
@@ -1234,14 +1240,6 @@ body {
   background: var(--basic-grey-light);
 }
 
-/* .filter__cost-value {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 16px;
-} */
-
 .filter__color {
   font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
@@ -1367,7 +1365,7 @@ body {
   border: 2px solid var(--basic-black);
   vertical-align: middle;
   border-radius: 50%;
-  left: -57px;
+  left: -58px;
   background-color: var(--basic-black);
 }
 
@@ -1377,14 +1375,14 @@ body {
   display: inline-block;
   margin-right: 15px;
   position: relative;
-
   text-indent: 0px;
   width: 6px;
   height: 6px;
   border: 2px solid var(--basic-black);
   vertical-align: middle;
   border-radius: 50%;
-  left: -62px;
+  left: -63px;
+  top: 0;
   background-color: var(--basic-black);
 }
 
@@ -1599,7 +1597,6 @@ body {
   margin-top: 12px;
   margin-bottom: 78px;
   margin-left: 67px;
-  padding: 9px 0px;
 }
 
 .products__button {
@@ -1612,6 +1609,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--basic-black);
+  padding: 25px;
 }
 
 .products__button:hover {
@@ -1619,20 +1617,21 @@ body {
 }
 
 .products__button:active {
-  background-color: #d9d9d9;
-  opacity: 0.3;
+  color: #989898;
 }
 
 .products__button-back {
   justify-self: left;
   align-self: center;
-  margin-left: 32px;
+  padding-left: 31px;
+  /* margin-left: 32px; */
 }
 
 .products__button-next {
   justify-self: right;
   align-self: center;
-  margin-right: 29px;
+  padding-right: 30px;
+  /* margin-right: 29px; */
 }
 
 .products__nav-list {
