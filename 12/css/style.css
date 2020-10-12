@@ -192,6 +192,14 @@ body {
   /* margin-left: 36px; */
 }
 
+.header__list-item:nth-child(1):focus-within .header__list-button {
+  display: block;
+}
+
+.header__list-item:nth-child(1):focus-within .header__list-search {
+  border-bottom: solid 2px var(--basic-black);
+}
+
 .header__list-item:nth-child(1)::before {
   content: "";
   position: absolute;
@@ -317,7 +325,7 @@ body {
 }
 
 .header__list-button:active {
-  opacity: 0.3;
+  color: #3f3f3f;
 }
 
 .header__list-search:focus {
