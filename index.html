@@ -43,16 +43,16 @@
               <a class="header__nav-link" href="">Каталог&nbsp;товаров</a>
               <div class="header__menu container">
                 <ul class="header__menu-list">
-                  <li class="header__menu-item">Виртуальная реальность</li>
-                  <li class="header__menu-item">Моноподы для селфи</li>
-                  <li class="header__menu-item">Экшн-камеры</li>
+                  <li class="header__menu-item"><a href="">Виртуальная реальность</a> </li>
+                  <li class="header__menu-item"><a href="catalog.html">Моноподы для селфи</a> </li>
+                  <li class="header__menu-item"><a href="">Экшн-камеры</a></li>
                 </ul>
                 <ul class="header__menu-list">
-                  <li class="header__menu-item">Фитнес-браслеты</li>
-                  <li class="header__menu-item">Умные часы</li>
+                  <li class="header__menu-item"><a href="">Фитнес-браслеты</a> </li>
+                  <li class="header__menu-item"><a href="">Умные часы</a> </li>
                 </ul>
                 <ul class="header__menu-list">
-                  <li class="header__menu-item">Квадрокоптер</li>
+                  <li class="header__menu-item"><a href="">Квадрокоптер</a> </li>
                 </ul>
               </div>
             </li>
@@ -81,7 +81,7 @@
         <div class="promo__container">
           <h2 class="visually-hidden">Промо товары</h2>
           <!-- Слайд селфипалка -->
-          <div class="promo__box promo__box--current promo__box--1">
+          <div class="promo__box promo__box--1 promo__box--current">
             <img
               class="promo__pic"
               width="384"
@@ -229,7 +229,6 @@
                 class="features__list-radio features__list-item--delivery"
                 id="features-delivery"
                 name="features-group"
-                ;
                 checked
               />
               <label for="features-delivery">Доставка</label>
@@ -241,7 +240,6 @@
                 class="features__list-radio features__list-item--guarantee"
                 id="features-guarantee"
                 name="features-group"
-                ;
               />
               <label for="features-guarantee">Гарантия</label>
             </li>
@@ -252,7 +250,6 @@
                 class="features__list-radio features__list-item--credit"
                 id="features-credit"
                 name="features-group"
-                ;
               />
               <label for="features-credit">Кредит</label>
             </li>
@@ -375,7 +372,7 @@
                 alt="Google карты"
               />
             </div>
-            <a class="about__contacts-link button" href="">Напишите нам</a>
+            <a class="about__contacts-link button">Напишите нам</a>
           </div>
         </div>
         <!-- /.container -->
@@ -386,7 +383,11 @@
       <div class="footer__container container">
         <div class="footer__nav">
           <a class="footer__nav-logo" href=""
-            ><img src="img/logo-device-yellow.svg" alt="Логотип Девайс"
+            ><img
+              src="img/logo-device-yellow.svg"
+              width="163"
+              height="35"
+              alt="Логотип Девайс"
           /></a>
           <ul class="footer__nav-list">
             <li class="footer__nav-item">
@@ -455,7 +456,10 @@
             </li>
           </ul>
           <a class="footer__social-logo" href="">
-            <img src="img/logo-htmlacademy.svg" alt="Логотип HTML academy" />
+            <img src="img/logo-htmlacademy.svg" 
+              width="27"
+              height="34"
+            alt="Логотип HTML academy" />
           </a>
         </div>
       </div>
@@ -463,7 +467,7 @@
     </footer>
     <section class="modal modal__write-us">
       <h2 class="visually-hidden">Написать нам</h2>
-      <form action="" method="GET">
+      <form action="mailto:ilnarshan@gmail.com" method="post">
         <div class="modal__box">
           <label for="modalUserName">Ваше имя:</label>
           <input
@@ -471,6 +475,7 @@
             type="text"
             name="username"
             placeholder="Имя Фамилия"
+            required
           />
         </div>
         <!-- /.moda__box -->
@@ -481,6 +486,7 @@
             type="email"
             name="email"
             placeholder="email@example.com"
+            required
           />
         </div>
         <!-- /.modal__box -->
@@ -492,6 +498,7 @@
             id="modalText"
             cols="30"
             rows="8"
+            required
           >
 В свободной форме</textarea
           >
@@ -500,7 +507,8 @@
 
         <input class="button modal-submit" type="submit" value="Отправить" />
       </form>
-      <button class="modal-close" type="button"></button>
+      <a class="modal-close"></a>
+      <!-- <button  type="button"></button> -->
     </section>
     <!-- /.modal__write-us -->
     <section class="modal-map">
@@ -515,5 +523,6 @@
       <button class="modal-close" type="button"></button>
     </section>
     <!-- /.modal-map -->
+    <script src="js/main.js"></script>
   </body>
 </html>
