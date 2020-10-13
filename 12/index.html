@@ -373,7 +373,7 @@
                 alt="Google карты"
               />
             </div>
-            <a class="about__contacts-link button" href="">Напишите нам</a>
+            <a class="about__contacts-link button">Напишите нам</a>
           </div>
         </div>
         <!-- /.container -->
@@ -476,6 +476,7 @@
             type="text"
             name="username"
             placeholder="Имя Фамилия"
+            required
           />
         </div>
         <!-- /.moda__box -->
@@ -486,6 +487,7 @@
             type="email"
             name="email"
             placeholder="email@example.com"
+            required
           />
         </div>
         <!-- /.modal__box -->
@@ -497,6 +499,7 @@
             id="modalText"
             cols="30"
             rows="8"
+            required
           >
 В свободной форме</textarea
           >
@@ -505,7 +508,8 @@
 
         <input class="button modal-submit" type="submit" value="Отправить" />
       </form>
-      <button class="modal-close" type="button"></button>
+      <a class="modal-close"></a>
+      <!-- <button  type="button"></button> -->
     </section>
     <!-- /.modal__write-us -->
     <section class="modal-map">
@@ -520,5 +524,6 @@
       <button class="modal-close" type="button"></button>
     </section>
     <!-- /.modal-map -->
+    <script src="js/main.js"></script>
   </body>
 </html>
