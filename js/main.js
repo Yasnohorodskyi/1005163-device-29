@@ -115,3 +115,37 @@ slides[slideIndex-1].style.display = "grid";
 dots[slideIndex-1].className+= "button__current";
 }
 
+
+// Слайдер секции "Features"
+
+var slideIndexFeatures = 1;
+showSlidesFeatures(slideIndexFeatures);
+
+function plusSlidesFeatures(m) {
+  showSlidesFeatures(slideIndexFeatures += m);
+}
+
+function currentSlidesFeatures(m){
+	showSlidesFeatures(slideIndexFeatures = m);
+}
+
+function showSlidesFeatures(m) {
+  var i;
+  var slidesFeatures = document.getElementsByClassName("features__info");
+  var dotsFeatures = document.getElementsByClassName("features__list-button");
+
+if (m > slidesFeatures.length){
+  slideIndexFeatures = 1
+}
+if (m < 1){
+  slideIndexFeatures=slidesFeatures.length
+}
+for(i=0; i < slidesFeatures.length; i++){
+  slidesFeatures[i].style.display= "none";
+}
+for(i=0; i < dotsFeatures.length; i++){
+  dotsFeatures[i].className= dotsFeatures[i].className.replace(" features__list-button--active","");
+}
+slidesFeatures[slideIndexFeatures-1].style.display = "block";
+dotsFeatures[slideIndexFeatures-1].className+= " features__list-button--active";
+}
