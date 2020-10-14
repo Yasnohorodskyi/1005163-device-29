@@ -1,3 +1,7 @@
+
+// Попапы для секции "modal-map" и "modal__write-us"
+
+
 const  contactUs = document.querySelector(".about__contacts-link");
 const contactUsPopup = document.querySelector(".modal__write-us");
 const contactUsClose = contactUsPopup.querySelector(".modal-close");
@@ -18,7 +22,6 @@ contactUs.addEventListener("click", function () {
   if (storage) {
     userName.value = storage;
     userMail.value = storage;
-    // userText.focus();
   } 
   else {
     userName.focus();
@@ -76,3 +79,39 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+
+// Слайдер секции "Promo"
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n){
+	showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("promo__box");
+  var dots = document.getElementsByClassName("promo__button");
+
+if (n > slides.length){
+  slideIndex = 1
+}
+if (n < 1){
+  slideIndex=slides.length
+}
+for(i=0; i < slides.length; i++){
+  slides[i].style.display= "none";
+}
+for(i=0; i < dots.length; i++){
+  dots[i].className= dots[i].className.replace("button__current","");
+}
+slides[slideIndex-1].style.display = "grid";
+dots[slideIndex-1].className+= "button__current";
+}
+

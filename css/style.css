@@ -482,15 +482,18 @@ body {
   max-height: 440px;
 }
 
-.promo__box--1,
+.promo__box--3 {
+  padding-left: 74px;
+}
+/* .promo__box--1,
 .promo__box--2,
 .promo__box--3 {
   display: none;
-}
+} */
 
-.promo__box--current {
+/* .promo__box--current {
   display: grid;
-}
+} */
 
 .promo__box-controls {
   position: absolute;
@@ -508,9 +511,10 @@ body {
   border-radius: 50%;
   cursor: pointer;
   margin-left: 14px;
+  outline: none;
 }
 
-.promo__box-controls .button__current {
+.button__current {
   background-image: url("../img/ellipse.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -528,7 +532,7 @@ body {
   position: absolute;
   width: 100px;
   height: 7px;
-  background-color: #fff;
+  background-color: var(--basic-white);
 }
 
 .promo__info-num {
@@ -636,14 +640,17 @@ body {
 
 .popular__list-item {
   margin-right: 40px;
-  background-image: linear-gradient(var(--special-yellow) 66%, #ffffff 66%);
+  background-image: linear-gradient(
+    var(--special-yellow) 66%,
+    var(--basic-white) 66%
+  );
   width: 160px;
 }
 
 .popular__list-item:hover {
   background-image: linear-gradient(
     var(--special-yellow-dark) 66%,
-    #ffffff 66%
+    var(--basic-white) 66%
   );
 }
 
@@ -719,7 +726,10 @@ body {
 
 .features {
   background-color: var(--basic-grey-light);
-  background-image: linear-gradient(#ffffff 37%, var(--basic-grey-light) 37%);
+  background-image: linear-gradient(
+    var(--basic-white) 37%,
+    var(--basic-grey-light) 37%
+  );
   padding-top: 104px;
   padding-bottom: 0px;
 }
@@ -1117,27 +1127,12 @@ body {
     #dcdcdc 70px,
     var(--basic-grey-light) 70px
   );
-  /* background-position: 0px 157px; */
+
   background-size: 100% 100%;
   display: grid;
   position: relative;
   z-index: 15;
 }
-
-/* .filter-wrapper:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  background-image: linear-gradient(
-      to left,
-      var(--basic-grey-light) 68em,
-      #dcdcdc 5%
-    ),
-    linear-gradient(to left, var(--basic-grey-light) 5em, var(--basic-white) 5%);
-  background-position: 0px 157px;
-  background-size: 100% 5%;
-  background-repeat: no-repeat;
-} */
 
 .filter {
   margin-left: auto;
@@ -1218,7 +1213,7 @@ body {
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid #ffffff;
+  border: 8px solid var(--basic-white);
   background-color: #ababab;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 #cfcfcf;
@@ -1295,7 +1290,7 @@ body {
 
 .filter__color-text:before {
   content: " ";
-  color: #000;
+  color: var(--basic-black);
   display: inline-block;
   margin-right: 18px;
   text-align: center;
@@ -1354,7 +1349,7 @@ body {
 .filter__bluetooth-no:before,
 .filter__bluetooth-yes:before {
   content: " ";
-  color: #000;
+  color: var(--basic-black);
   display: inline-block;
   margin-right: 15px;
   position: relative;
@@ -1369,7 +1364,7 @@ body {
 
 .filter__bluetooth-value:checked + .filter__bluetooth-no::after {
   content: "";
-  color: #000;
+  color: var(--basic-black);
   display: inline-block;
   margin-right: 15px;
   position: relative;
@@ -1386,7 +1381,7 @@ body {
 
 .filter__bluetooth-value:checked + .filter__bluetooth-yes::after {
   content: "";
-  color: #000;
+  color: var(--basic-black);
   display: inline-block;
   margin-right: 15px;
   position: relative;
