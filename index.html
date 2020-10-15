@@ -451,7 +451,7 @@ onclick="currentSlidesFeatures(3)" class="features__list-button">Кредит</b
     </footer>
     <section class="modal modal__write-us">
       <h2 class="visually-hidden">Написать нам</h2>
-      <form action="mailto:ilnarshan@gmail.com" method="post">
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="modal__box">
           <label for="modalUserName">Ваше имя:</label>
           <input
@@ -460,7 +460,6 @@ onclick="currentSlidesFeatures(3)" class="features__list-button">Кредит</b
             type="text"
             name="username"
             placeholder="Имя Фамилия"
-            required
           />
         </div>
         <!-- /.moda__box -->
@@ -471,8 +470,7 @@ onclick="currentSlidesFeatures(3)" class="features__list-button">Кредит</b
             id="modalEmail"
             type="email"
             name="email"
-            placeholder="email@example.com"
-            required
+            placeholder="email@example.com" 
           />
         </div>
         <!-- /.modal__box -->
@@ -484,14 +482,14 @@ onclick="currentSlidesFeatures(3)" class="features__list-button">Кредит</b
             id="modalText"
             cols="30"
             rows="8"
-            required
+            
           >
 В свободной форме</textarea
           >
         </div>
         <!-- /.modal__box -->
 
-        <input class="button modal-submit" type="submit" value="Отправить" />
+        <button class="button modal-submit" type="submit" >Отправить</button>
       </form>
       <a class="modal-close"></a>
       <!-- <button  type="button"></button> -->

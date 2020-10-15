@@ -55,6 +55,10 @@
   --special-cf: #cfcfcf;
   --special-controls: #283136;
   --special-navs: #ebebeb;
+  --special-hover: #d9d9d9;
+  --special-active: #989898;
+  --special-input: #f2f2f2;
+  --special-error: #f6dada;
 }
 
 body {
@@ -1686,25 +1690,23 @@ body {
 }
 
 .products__button:hover {
-  background-color: #d9d9d9;
+  background-color: var(--special-hover);
 }
 
 .products__button:active {
-  color: #989898;
+  color: var(--special-active);
 }
 
 .products__button-back {
   justify-self: left;
   align-self: center;
   padding-left: 31px;
-  /* margin-left: 32px; */
 }
 
 .products__button-next {
   justify-self: right;
   align-self: center;
   padding-right: 30px;
-  /* margin-right: 29px; */
 }
 
 .products__nav-list {
@@ -2015,14 +2017,14 @@ body {
   line-height: 22px;
 }
 
-.modal__box input {
+.modal__mail,
+.modal__user {
   border: none;
-  background-color: #f2f2f2;
+  background-color: var(--special-input);
   width: 340px;
   height: 50px;
   padding-left: 20px;
   outline: none;
-  /* position: absolute; */
 }
 
 .modal__box input:hover {
@@ -2077,7 +2079,7 @@ body {
 
 .modal__box textarea {
   border: none;
-  background-color: #f2f2f2;
+  background-color: var(--special-input);
   padding-left: 20px;
   padding-top: 14px;
   outline: none;
@@ -2098,38 +2100,16 @@ body {
   background-color: var(--basic-grey-light);
 }
 
+.modal__user--error,
+.modal__mail--error {
+  background-color: var(--special-error);
+}
+
 .modal-submit {
   cursor: pointer;
   border: none;
   outline: none;
-  background-color: var(--special-yellow-dark);
-  background-image: linear-gradient(
-    var(--basic-white) 41%,
-    var(--special-yellow-dark) 41%,
-    var(--special-yellow-dark) 59%,
-    var(--basic-white) 59%
-  );
-  /* background-position: 100% 50%; */
-  padding: 10px 0px;
-  width: 200px;
-}
-
-.modal-submit:hover {
-  background-image: linear-gradient(
-    var(--special-yellow-dark) 100%,
-    var(--special-yellow-dark) 100%
-  );
-  transition: 0.1s;
-}
-
-.modal-submit:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 7px;
-  width: 220px;
-  height: 8px;
-  z-index: 150;
+  background-color: transparent;
 }
 
 .modal-close {
