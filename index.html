@@ -180,13 +180,13 @@
           <!-- / Слайд квадрокоптер  -->
         </div>
         <div class="promo__box-controls">
-          <button
-            class="button__current"
+          <button onclick="currentSlide(1)"
+            class="promo__button button__current"
             type="button"
             aria-label="Первый слайд"
           ></button>
-          <button type="button" aria-label="Второй слайд"></button>
-          <button type="button" aria-label="Третий слайд"></button>
+          <button onclick="currentSlide(2)" class="promo__button " type="button" aria-label="Второй слайд"></button>
+          <button onclick="currentSlide(3)" class="promo__button " type="button" aria-label="Третий слайд"></button>
         </div>
         <!-- /.promo__box-controls -->
         <!-- /.promo__container -->
@@ -224,34 +224,18 @@
         <div class="features__container container">
           <ul class="features__list">
             <li class="features__list-item">
-              <input
-                type="radio"
-                class="features__list-radio features__list-item--delivery"
-                id="features-delivery"
-                name="features-group"
-                checked
-              />
-              <label for="features-delivery">Доставка</label>
+<button 
+onclick="currentSlidesFeatures(1)" class="features__list-button ">Доставка</button>
             </li>
 
             <li class="features__list-item">
-              <input
-                type="radio"
-                class="features__list-radio features__list-item--guarantee"
-                id="features-guarantee"
-                name="features-group"
-              />
-              <label for="features-guarantee">Гарантия</label>
+<button 
+onclick="currentSlidesFeatures(2)" class="features__list-button">Гарантия</button>
             </li>
 
             <li class="features__list-item">
-              <input
-                type="radio"
-                class="features__list-radio features__list-item--credit"
-                id="features-credit"
-                name="features-group"
-              />
-              <label for="features-credit">Кредит</label>
+<button 
+onclick="currentSlidesFeatures(3)" class="features__list-button">Кредит</button>
             </li>
           </ul>
           <div class="features__info-box">
@@ -266,15 +250,15 @@
             <div class="features__info features__info--warranty">
               <h3 class="features__info-title">Гарантия</h3>
               <p class="features__info-desc">
-                Если из-за возгорания купленного у нас товара у вас сгорит дом —
-                не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+                Если из-за возгорания купленного у нас товара у вас сгорит дом —<br>
+                не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.
               </p>
             </div>
             <div class="features__info features__info--credit">
               <h3 class="features__info-title">Кредит</h3>
               <p class="features__info-desc">
-                Залезть в долговую яму стало проще! Кредитные консультанты
-                подберут для вас наиболее выгодные условия кредита. Выгодные для
+                Залезть в долговую яму стало проще! Кредитные консультанты<br>
+                подберут для вас наиболее выгодные<br> условия кредита. Выгодные для
                 нашего банка, разумеется.
               </p>
             </div>
@@ -467,26 +451,26 @@
     </footer>
     <section class="modal modal__write-us">
       <h2 class="visually-hidden">Написать нам</h2>
-      <form action="mailto:ilnarshan@gmail.com" method="post">
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="modal__box">
           <label for="modalUserName">Ваше имя:</label>
           <input
+            class="modal__user"
             id="modalUserName"
             type="text"
             name="username"
             placeholder="Имя Фамилия"
-            required
           />
         </div>
         <!-- /.moda__box -->
         <div class="modal__box">
           <label for="modalEmail">Ваш e-mail:</label>
           <input
+            class="modal__mail"
             id="modalEmail"
             type="email"
             name="email"
-            placeholder="email@example.com"
-            required
+            placeholder="email@example.com" 
           />
         </div>
         <!-- /.modal__box -->
@@ -498,14 +482,14 @@
             id="modalText"
             cols="30"
             rows="8"
-            required
+            
           >
 В свободной форме</textarea
           >
         </div>
         <!-- /.modal__box -->
 
-        <input class="button modal-submit" type="submit" value="Отправить" />
+        <button class="button modal-submit" type="submit" >Отправить</button>
       </form>
       <a class="modal-close"></a>
       <!-- <button  type="button"></button> -->
