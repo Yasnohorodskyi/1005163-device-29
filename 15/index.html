@@ -40,20 +40,26 @@
         </ul>
         <nav class="header__nav">
           <ul class="header__nav-list">
-            <li class="header__nav-item">
+            <li class="header__nav-item header__nav-catalog">
               <a class="header__nav-link" href="">Каталог&nbsp;товаров</a>
               <div class="header__menu container">
                 <ul class="header__menu-list">
-                  <li class="header__menu-item"><a href="">Виртуальная реальность</a> </li>
-                  <li class="header__menu-item"><a href="catalog.html">Моноподы для селфи</a> </li>
+                  <li class="header__menu-item">
+                    <a href="">Виртуальная реальность</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="catalog.html">Моноподы для селфи</a>
+                  </li>
                   <li class="header__menu-item"><a href="">Экшн-камеры</a></li>
                 </ul>
                 <ul class="header__menu-list">
-                  <li class="header__menu-item"><a href="">Фитнес-браслеты</a> </li>
-                  <li class="header__menu-item"><a href="">Умные часы</a> </li>
+                  <li class="header__menu-item">
+                    <a href="">Фитнес-браслеты</a>
+                  </li>
+                  <li class="header__menu-item"><a href="">Умные часы</a></li>
                 </ul>
                 <ul class="header__menu-list">
-                  <li class="header__menu-item"><a href="">Квадрокоптер</a> </li>
+                  <li class="header__menu-item"><a href="">Квадрокоптер</a></li>
                 </ul>
               </div>
             </li>
@@ -181,13 +187,24 @@
           <!-- / Слайд квадрокоптер  -->
         </div>
         <div class="promo__box-controls">
-          <button onclick="currentSlide(1)"
+          <button
+            onclick="currentSlide(1)"
             class="promo__button button__current"
             type="button"
             aria-label="Первый слайд"
           ></button>
-          <button onclick="currentSlide(2)" class="promo__button " type="button" aria-label="Второй слайд"></button>
-          <button onclick="currentSlide(3)" class="promo__button " type="button" aria-label="Третий слайд"></button>
+          <button
+            onclick="currentSlide(2)"
+            class="promo__button"
+            type="button"
+            aria-label="Второй слайд"
+          ></button>
+          <button
+            onclick="currentSlide(3)"
+            class="promo__button"
+            type="button"
+            aria-label="Третий слайд"
+          ></button>
         </div>
         <!-- /.promo__box-controls -->
         <!-- /.promo__container -->
@@ -225,18 +242,30 @@
         <div class="features__container container">
           <ul class="features__list">
             <li class="features__list-item">
-<button 
-onclick="currentSlidesFeatures(1)" class="features__list-button ">Доставка</button>
+              <button
+                onclick="currentSlidesFeatures(1)"
+                class="features__list-button"
+              >
+                Доставка
+              </button>
             </li>
 
             <li class="features__list-item">
-<button 
-onclick="currentSlidesFeatures(2)" class="features__list-button">Гарантия</button>
+              <button
+                onclick="currentSlidesFeatures(2)"
+                class="features__list-button"
+              >
+                Гарантия
+              </button>
             </li>
 
             <li class="features__list-item">
-<button 
-onclick="currentSlidesFeatures(3)" class="features__list-button">Кредит</button>
+              <button
+                onclick="currentSlidesFeatures(3)"
+                class="features__list-button"
+              >
+                Кредит
+              </button>
             </li>
           </ul>
           <div class="features__info-box">
@@ -251,16 +280,18 @@ onclick="currentSlidesFeatures(3)" class="features__list-button">Кредит</b
             <div class="features__info features__info--warranty">
               <h3 class="features__info-title">Гарантия</h3>
               <p class="features__info-desc">
-                Если из-за возгорания купленного у нас товара у вас сгорит дом —<br>
-                не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.
+                Если из-за возгорания купленного у нас товара у вас сгорит дом
+                —<br />
+                не переживайте, мы выдадим вам новый.<br />Товар, не дом,
+                конечно же.
               </p>
             </div>
             <div class="features__info features__info--credit">
               <h3 class="features__info-title">Кредит</h3>
               <p class="features__info-desc">
-                Залезть в долговую яму стало проще! Кредитные консультанты<br>
-                подберут для вас наиболее выгодные<br> условия кредита. Выгодные для
-                нашего банка, разумеется.
+                Залезть в долговую яму стало проще! Кредитные консультанты<br />
+                подберут для вас наиболее выгодные<br />
+                условия кредита. Выгодные для нашего банка, разумеется.
               </p>
             </div>
           </div>
@@ -356,7 +387,7 @@ onclick="currentSlidesFeatures(3)" class="features__list-button">Кредит</b
                 alt="Google карты"
               />
             </div>
-            <a class="about__contacts-link button">Напишите нам</a>
+            <button class="about__contacts-link button">Напишите нам</button>
           </div>
         </div>
         <!-- /.container -->
@@ -439,11 +470,16 @@ onclick="currentSlidesFeatures(3)" class="features__list-button">Кредит</b
               /></a>
             </li>
           </ul>
-          <a class="footer__social-logo" href="">
-            <img src="img/logo-htmlacademy.svg" 
+          <a
+            class="footer__social-logo"
+            href="https://htmlacademy.ru/intensive/htmlcss"
+          >
+            <img
+              src="img/logo-htmlacademy.svg"
               width="27"
               height="34"
-            alt="Логотип HTML academy" />
+              alt="Логотип HTML academy"
+            />
           </a>
         </div>
       </div>
@@ -451,7 +487,11 @@ onclick="currentSlidesFeatures(3)" class="features__list-button">Кредит</b
     </footer>
     <section class="modal modal__write-us">
       <h2 class="visually-hidden">Написать нам</h2>
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+      <form
+        class="modal__form"
+        action="https://echo.htmlacademy.ru"
+        method="post"
+      >
         <div class="modal__box">
           <label for="modalUserName">Ваше имя:</label>
           <input
@@ -470,7 +510,7 @@ onclick="currentSlidesFeatures(3)" class="features__list-button">Кредит</b
             id="modalEmail"
             type="email"
             name="email"
-            placeholder="email@example.com" 
+            placeholder="email@example.com"
           />
         </div>
         <!-- /.modal__box -->
@@ -487,7 +527,7 @@ onclick="currentSlidesFeatures(3)" class="features__list-button">Кредит</b
           >
         </div>
         <!-- /.modal__box -->
-        <button class="button modal-submit" type="submit" >Отправить</button>
+        <button class="button modal-submit" type="submit">Отправить</button>
       </form>
       <a class="modal-close"></a>
       <!-- <button  type="button"></button> -->
