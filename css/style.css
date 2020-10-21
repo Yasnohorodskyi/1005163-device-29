@@ -206,9 +206,7 @@ body {
 
 .header__list-item:nth-child(1) {
   display: flex;
-  /* margin-right: 366px; */
   position: absolute;
-  /* margin-left: 36px; */
 }
 
 .header__list-item:nth-child(1):focus-within .header__list-button {
@@ -236,7 +234,7 @@ body {
   margin-right: 241px;
 }
 
-.header__user-item:before {
+.header__user-item .header__user-link:before {
   content: "";
   position: absolute;
   width: 16px;
@@ -1811,7 +1809,7 @@ body {
   /* margin-right: 10px; */
 }
 
-.footer__nav-item:nth-child(1):before {
+.footer__nav-item:nth-child(1) .footer__nav-link:before {
   content: "";
   width: 16px;
   height: 16px;
@@ -1820,6 +1818,7 @@ body {
   top: 3px;
   background-image: url("../img/icon_user_f.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .footer__nav-item:nth-child(2):before {
