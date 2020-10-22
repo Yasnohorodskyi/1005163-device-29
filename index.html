@@ -20,12 +20,19 @@
         </a>
         <ul class="header__list">
           <li class="header__list-item header__list-item--active">
-            <input
-              class="header__list-search"
-              type="text"
-              placeholder="Поиск по сайту"
-            />
-            <input class="header__list-button" type="button" value="Найти" />
+            <form
+              action="https://echo.htmlacademy.ru"
+              method="post"
+              target="_blank"
+            >
+              <input
+                class="header__list-search"
+                type="text"
+                name="query"
+                placeholder="Поиск по сайту"
+              />
+              <input class="header__list-button" type="submit" value="Найти" />
+            </form>
           </li>
           <li class="header__list-item header__list-login">
             <a class="header__list-link" href="">Войти</a>

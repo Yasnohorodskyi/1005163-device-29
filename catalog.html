@@ -21,12 +21,19 @@
         </a>
         <ul class="header__list">
           <li class="header__list-item header__list-item--active">
-            <input
-              class="header__list-search"
-              type="text"
-              placeholder="Поиск по сайту"
-            />
-            <input class="header__list-button" type="button" value="Найти" />
+            <form
+              action="https://echo.htmlacademy.ru"
+              method="post"
+              target="_blank"
+            >
+              <input
+                class="header__list-search"
+                type="text"
+                name="query"
+                placeholder="Поиск по сайту"
+              />
+              <input class="header__list-button" type="submit" value="Найти" />
+            </form>
           </li>
           <li class="header__list-item header__user-item">
             <a
@@ -49,7 +56,7 @@
           <ul class="header__nav-list">
             <li class="header__nav-item header__nav-catalog">
               <a class="header__nav-link" href="">Каталог&nbsp;товаров</a>
-              <div class="header__menu container" tabindex="0">
+              <div class="header__menu container">
                 <ul class="header__menu-list">
                   <li class="header__menu-item">
                     <a href="">Виртуальная реальность</a>
@@ -293,9 +300,13 @@
                     src="img/Amateur_selfie_stick.jpg"
                     alt="Любительская селфи-палка"
                   />
-                  <div class="products__item-cart" tabindex="0">
-                    <a class="button products__item-button"> В корзину</a>
-                    <p class="products__item-link">Добавить к сравнению</p>
+                  <div class="products__item-cart">
+                    <a class="button products__item-button" tabindex="0">
+                      В корзину</a
+                    >
+                    <a class="products__item-link" tabindex="0"
+                      >Добавить к сравнению</a
+                    >
                   </div>
                   <!-- /.products__item-cart -->
                 </div>
@@ -316,14 +327,17 @@
                     src="img/Professional-selfie stick.jpg"
                     alt="Профессиональная селфи-палка"
                   />
-                  <div class="products__item-cart" tabindex="0">
-                    <a class="button products__item-button"> В корзину </a>
-                    <p class="products__item-link">Добавить к сравнению</p>
+                  <div class="products__item-cart">
+                    <a class="button products__item-button" tabindex="0">
+                      В корзину
+                    </a>
+                    <a class="products__item-link" tabindex="0"
+                      >Добавить к сравнению</a
+                    >
                   </div>
                   <!-- /.products__item-cart -->
                 </div>
                 <!-- /.product__item-box -->
-
                 <div class="products__item-title">
                   <a class="products__item-text" href=""
                     >Профессиональная <br />
@@ -341,9 +355,13 @@
                     src="img/Unsinkable-selfie-stick.jpg"
                     alt="Непотопляемая селфи-палка"
                   />
-                  <div class="products__item-cart" tabindex="0">
-                    <a class="button products__item-button"> В корзину </a>
-                    <p class="products__item-link">Добавить к сравнению</p>
+                  <div class="products__item-cart">
+                    <a class="button products__item-button" tabindex="0">
+                      В корзину
+                    </a>
+                    <a class="products__item-link" tabindex="0"
+                      >Добавить к сравнению</a
+                    >
                   </div>
                   <!-- /.products__item-cart -->
                 </div>
@@ -367,9 +385,13 @@
                     src="img/Selfie-stick-Follow-me.jpg"
                     alt="Селфи-палка «Следуй за мной"
                   />
-                  <div class="products__item-cart" tabindex="0">
-                    <a class="button products__item-button"> В корзину </a>
-                    <p class="products__item-link">Добавить к сравнению</p>
+                  <div class="products__item-cart">
+                    <a class="button products__item-button" tabindex="0">
+                      В корзину
+                    </a>
+                    <a class="products__item-link" tabindex="0"
+                      >Добавить к сравнению</a
+                    >
                   </div>
                   <!-- /.products__item-cart -->
                 </div>
