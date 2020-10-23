@@ -1577,7 +1577,7 @@ body {
   visibility: visible;
 }
 
-.product__item-box:focus > .products__item-pic {
+.product__item-box:focus-within > .products__item-pic {
   opacity: 0.3;
 }
 
