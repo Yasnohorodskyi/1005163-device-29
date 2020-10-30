@@ -1317,6 +1317,7 @@ body {
 .filter__bluetooth-yes {
   font-size: 15px;
   line-height: 19px;
+  position: relative;
 }
 
 .filter__bluetooth-no:hover:before,
@@ -1357,14 +1358,15 @@ body {
   color: var(--basic-black);
   display: inline-block;
   margin-right: 15px;
-  position: relative;
+  position: absolute;
   text-indent: 0px;
   width: 6px;
   height: 6px;
   border: 2px solid var(--basic-black);
   vertical-align: middle;
   border-radius: 50%;
-  left: -57px;
+  left: 7px;
+  top: 7px;
   background-color: var(--basic-black);
 }
 
@@ -1373,15 +1375,15 @@ body {
   color: var(--basic-black);
   display: inline-block;
   margin-right: 15px;
-  position: relative;
+  position: absolute;
   text-indent: 0px;
   width: 6px;
   height: 6px;
   border: 2px solid var(--basic-black);
   vertical-align: middle;
   border-radius: 50%;
-  left: -62px;
-  top: 0;
+  left: 7px;
+  top: 8px;
   background-color: var(--basic-black);
 }
 
