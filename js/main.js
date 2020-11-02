@@ -1,14 +1,12 @@
-// Попапы для секции "modal-map" и "modal__write-us"
-
-const contactUs = document.querySelector(".about__contacts-link");
-const contactUsPopup = document.querySelector(".modal__write-us");
-const contactUsClose = contactUsPopup.querySelector(".modal-close");
-const contactUsForm = contactUsPopup.querySelector(".modal__form");
-const userName = contactUsPopup.querySelector("#modalUserName");
-const userMail = contactUsPopup.querySelector("#modalEmail");
-const userText = contactUsPopup.querySelector(".modal__box-textarea");
-const isStorageSupport = true;
-const storage = "";
+var contactUs = document.querySelector(".about__contacts-link");
+var contactUsPopup = document.querySelector(".modal__write-us");
+var contactUsClose = contactUsPopup.querySelector(".modal-close");
+var contactUsForm = contactUsPopup.querySelector(".modal__form");
+var userName = contactUsPopup.querySelector("#modalUserName");
+var userMail = contactUsPopup.querySelector("#modalEmail");
+var userText = contactUsPopup.querySelector(".modal__box-textarea");
+var isStorageSupport = true;
+var storage = "";
 
 contactUs.addEventListener("click", function () {
   contactUsPopup.classList.add("modal__write-us--active");
@@ -50,9 +48,9 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-const mapLink = document.querySelector(".about__contacts-map");
-const mapPopup = document.querySelector(".modal-map");
-const mapClose = mapPopup.querySelector(".modal-close");
+var mapLink = document.querySelector(".about__contacts-map");
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = mapPopup.querySelector(".modal-close");
 
 mapLink.addEventListener("click", function (evt) {
   evt.preventDefault();
