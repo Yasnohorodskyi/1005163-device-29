@@ -25,12 +25,14 @@
               method="post"
               target="_blank"
             >
-              <input
-                class="header__list-search"
-                type="text"
-                name="query"
-                placeholder="Поиск по сайту"
-              />
+              <label>
+                <input
+                  class="header__list-search"
+                  type="search"
+                  name="query"
+                  placeholder="Поиск по сайту"
+              /></label>
+
               <input class="header__list-button" type="submit" value="Найти" />
             </form>
           </li>
@@ -134,16 +136,16 @@
           <div class="promo__box promo__box--2">
             <img
               class="promo__pic"
-              width="384"
-              height="486"
+              width="345"
+              height="485"
               src="img/fitness-bracelet.png"
               alt="Фитнес браслет>"
             />
             <div class="promo__info">
-              <span class="promo__info-num">02</span>
-              <p class="promo__info-title">Худеем правильно!</p>
+              <span class="promo__info-num promo__info-two">02</span>
+              <p class="promo__info-title">Худеем<br />правильно!</p>
               <p class="promo__info-text">
-                Мотивирующие фитнес-браслеты помогут найти в себе силы не
+                Мотивирующие фитнес-браслеты помогут найти в себе силы<br />не
                 пропускать занятия и соблюдать диету.
               </p>
               <a class="promo__info-link button" href="">Подробнее</a>
@@ -169,12 +171,12 @@
               alt="Квадрокоптер"
             />
             <div class="promo__info">
-              <span class="promo__info-num">03</span>
+              <span class="promo__info-num promo__info-three">03</span>
               <p class="promo__info-title">
                 Порхает как бабочка, жалит как пчела!
               </p>
               <p class="promo__info-text">
-                Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+                Этот обычный, на первый взгляд, квадрокоптер оснащен<br />мощным
                 лазером, замаскированным под стандартную камеру.
               </p>
               <a class="promo__info-link button" href="">Подробнее</a>
@@ -386,14 +388,19 @@
               сможете проверить работоспособность покупки. Всякое бывает.
             </p>
             <div class="about__contacts-map">
-              <img
-                src="img/google_map.jpg"
-                width="560"
-                height="222"
-                alt="Google карты"
-              />
+              <a href="https://goo.gl/maps/uWrkKHHKnHn6yydB9" target="_blank">
+                <img
+                  src="img/google-map.jpg"
+                  width="560"
+                  height="222"
+                  alt="Google карты"
+              /></a>
             </div>
-            <button class="about__contacts-link button">Напишите нам</button>
+            <a
+              class="about__contacts-link button"
+              aria-label="Кнопка напишите нам"
+              >Напишите нам</a
+            >
           </div>
         </div>
         <!-- /.container -->
@@ -451,7 +458,7 @@
                   class="footer__social-pic"
                   width="32"
                   height="32"
-                  src="img/icon_facebook.svg"
+                  src="img/icon-facebook.svg"
                   alt="facebook"
               /></a>
             </li>
@@ -461,7 +468,7 @@
                   class="footer__social-pic"
                   width="32"
                   height="32"
-                  src="img/icon_instagram.svg"
+                  src="img/icon-instagram.svg"
                   alt="instagram"
               /></a>
             </li>
@@ -471,7 +478,7 @@
                   class="footer__social-pic"
                   width="32"
                   height="32"
-                  src="img/icon_witter.svg"
+                  src="img/icon-witter.svg"
                   alt="twitter"
               /></a>
             </li>
@@ -522,15 +529,17 @@
         <!-- /.modal__box -->
         <div class="modal__box">
           <p class="modal__box-title">Текст письма:</p>
-          <textarea
-            class="modal__box-textarea"
-            name="posttext"
-            id="modalText"
-            cols="30"
-            rows="8"
-          >
+          <label class="modal__box-label">
+            <textarea
+              class="modal__box-textarea"
+              name="posttext"
+              id="modalText"
+              cols="30"
+              rows="8"
+            >
 В свободной форме</textarea
-          >
+            >
+          </label>
         </div>
         <!-- /.modal__box -->
         <button class="button modal-submit" type="submit">Отправить</button>
