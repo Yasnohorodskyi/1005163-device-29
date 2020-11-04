@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
     <link href="css/normalize.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/minstyle.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Шапка  -->
@@ -25,12 +25,14 @@
               method="post"
               target="_blank"
             >
-              <input
-                class="header__list-search"
-                type="text"
-                name="query"
-                placeholder="Поиск по сайту"
-              />
+              <label>
+                <input
+                  class="header__list-search"
+                  type="search"
+                  name="query"
+                  placeholder="Поиск по сайту"
+              /></label>
+
               <input class="header__list-button" type="submit" value="Найти" />
             </form>
           </li>
@@ -109,182 +111,184 @@
           </ul>
         </div>
         <!-- / Шапка каталога -->
-        <div class="catalog__container container">
-          <div class="filter-wrapper">
-            <!-- Блок с фильтрами -->
-            <div class="filter">
+        <div class="catalog__container">
+          <div class="filter__wrapper">
+            <div class="filter__title-wrapper">
               <span class="filter__title">Фильтр:</span>
-              <div class="filter__container">
-                <form
-                  class="filter__cost-form"
-                  method="get"
-                  action="https://echo.htmlacademy.ru"
-                  target="_blank"
-                >
-                  <fieldset class="filter-item">
-                    <legend>Стоимость</legend>
-                    <div class="filter__range">
-                      <div class="filter__range-controls">
-                        <div class="filter__cost-scale">
-                          <div class="filter__cost-bar"></div>
-                        </div>
-                        <div
-                          class="filter__cost-toggle toggle-min"
-                          tabindex="0"
-                        ></div>
-                        <div
-                          class="filter__cost-toggle toggle-max"
-                          tabindex="0"
-                        ></div>
-                      </div>
-                      <div class="filter__cost-controls">
-                        <label class="filter__min-price">
-                          от <input type="number" name="min-price" value="0" />
-                        </label>
-                        <label class="filter__max-price">
-                          до
-                          <input type="number" name="max-price" value="5000" />
-                        </label>
-                      </div>
-                    </div>
-                  </fieldset>
-                  <!-- /fieldset -->
-                  <fieldset class="filter-item filter-item-color">
-                    <legend class="filter__color">Цвет</legend>
-                    <ul class="filter__color-list">
-                      <li class="filter__color-item">
-                        <input
-                          class="filter__color-value visually-hidden"
-                          type="checkbox"
-                          id="filter__color-black"
-                          name="black"
-                          checked
-                        /><label
-                          class="filter__color-text filter__color-text-block"
-                          for="filter__color-black"
-                          >Чёрный
-                        </label>
-                      </li>
-                      <li class="filter__color-item">
-                        <input
-                          class="filter__color-value visually-hidden"
-                          type="checkbox"
-                          id="filter__color-white"
-                          name="white"
-                        /><label
-                          class="filter__color-text"
-                          for="filter__color-white"
-                          >Белый
-                        </label>
-                      </li>
-                      <li class="filter__color-item">
-                        <input
-                          class="filter__color-value visually-hidden"
-                          type="checkbox"
-                          id="filter__color-blue"
-                          name="blue"
-                          checked
-                        /><label
-                          class="filter__color-text"
-                          for="filter__color-blue"
-                          >Синий
-                        </label>
-                      </li>
-                      <li class="filter__color-item">
-                        <input
-                          class="filter__color-value visually-hidden"
-                          type="checkbox"
-                          id="filter__color-red"
-                          name="red"
-                          checked
-                        /><label
-                          class="filter__color-text"
-                          for="filter__color-red"
-                          >Красный</label
-                        >
-                      </li>
-                      <li class="filter__color-item">
-                        <input
-                          class="filter__color-value visually-hidden"
-                          type="checkbox"
-                          id="filter__color-pink"
-                          name="pink"
-                        /><label
-                          class="filter__color-text"
-                          for="filter__color-pink"
-                          >Розовый</label
-                        >
-                      </li>
-                    </ul>
-                  </fieldset>
-                  <!-- /fieldset -->
-                  <fieldset class="filter-item filter__bluetooth">
-                    <legend class="filter__bluetooth-title">Bluetooth</legend>
-                    <ul class="filter__bluetooth-list">
-                      <li class="filter__bluetooth-choice">
-                        <input
-                          class="filter__bluetooth-value visually-hidden"
-                          type="radio"
-                          name="Bluetooth"
-                          value="on"
-                          id="BluetoothOn"
-                          checked
-                        />
-                        <label class="filter__bluetooth-yes" for="BluetoothOn"
-                          >Есть</label
-                        >
-                      </li>
-                      <li class="filter__bluetooth-choice">
-                        <input
-                          class="filter__bluetooth-value visually-hidden"
-                          type="radio"
-                          name="Bluetooth"
-                          value="off"
-                          id="BluetoothOff"
-                        />
-                        <label class="filter__bluetooth-no" for="BluetoothOff"
-                          >Нет</label
-                        >
-                      </li>
-                    </ul>
-                  </fieldset>
-                  <!-- /fieldset -->
-                  <button class="button filter__button-show" type="submit">
-                    Показать
-                  </button>
-                </form>
-              </div>
             </div>
-            <!-- /Блок с фильтрами -->
+            <!-- /.filter__title-wrapper -->
+            <form
+              class="filter__cost-form"
+              method="get"
+              action="https://echo.htmlacademy.ru"
+              target="_blank"
+            >
+              <fieldset class="filter-item">
+                <legend>Стоимость</legend>
+                <div class="filter__range">
+                  <div class="filter__range-controls">
+                    <div class="filter__cost-scale">
+                      <div class="filter__cost-bar"></div>
+                    </div>
+                    <button
+                      class="filter__cost-toggle toggle-min"
+                      tabindex="0"
+                      aria-label="минимальная цена"
+                      type="button"
+                    ></button>
+                    <button
+                      class="filter__cost-toggle toggle-max"
+                      tabindex="0"
+                      aria-label="максимальная цена"
+                      type="button"
+                    ></button>
+                  </div>
+                  <div class="filter__cost-controls">
+                    <label class="filter__min-price">
+                      от <input type="number" name="min-price" value="0" />
+                    </label>
+                    <label class="filter__max-price">
+                      до
+                      <input type="number" name="max-price" value="5000" />
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <!-- /fieldset -->
+              <fieldset class="filter-item filter-item-color">
+                <legend class="filter__color">Цвет</legend>
+                <ul class="filter__color-list">
+                  <li class="filter__color-item">
+                    <input
+                      class="filter__color-value visually-hidden"
+                      type="checkbox"
+                      id="filter__color-black"
+                      name="black"
+                      checked
+                    /><label
+                      class="filter__color-text filter__color-text-block"
+                      for="filter__color-black"
+                      >Чёрный
+                    </label>
+                  </li>
+                  <li class="filter__color-item">
+                    <input
+                      class="filter__color-value visually-hidden"
+                      type="checkbox"
+                      id="filter__color-white"
+                      name="white"
+                    /><label
+                      class="filter__color-text"
+                      for="filter__color-white"
+                      >Белый
+                    </label>
+                  </li>
+                  <li class="filter__color-item">
+                    <input
+                      class="filter__color-value visually-hidden"
+                      type="checkbox"
+                      id="filter__color-blue"
+                      name="blue"
+                      checked
+                    /><label class="filter__color-text" for="filter__color-blue"
+                      >Синий
+                    </label>
+                  </li>
+                  <li class="filter__color-item">
+                    <input
+                      class="filter__color-value visually-hidden"
+                      type="checkbox"
+                      id="filter__color-red"
+                      name="red"
+                      checked
+                    /><label class="filter__color-text" for="filter__color-red"
+                      >Красный</label
+                    >
+                  </li>
+                  <li class="filter__color-item">
+                    <input
+                      class="filter__color-value visually-hidden"
+                      type="checkbox"
+                      id="filter__color-pink"
+                      name="pink"
+                    /><label class="filter__color-text" for="filter__color-pink"
+                      >Розовый</label
+                    >
+                  </li>
+                </ul>
+              </fieldset>
+              <!-- /fieldset -->
+              <fieldset class="filter-item filter__bluetooth">
+                <legend class="filter__bluetooth-title">Bluetooth</legend>
+                <ul class="filter__bluetooth-list">
+                  <li class="filter__bluetooth-choice">
+                    <input
+                      class="filter__bluetooth-value visually-hidden"
+                      type="radio"
+                      name="Bluetooth"
+                      value="on"
+                      id="BluetoothOn"
+                      checked
+                    />
+                    <label class="filter__bluetooth-yes" for="BluetoothOn"
+                      >Есть</label
+                    >
+                  </li>
+                  <li class="filter__bluetooth-choice">
+                    <input
+                      class="filter__bluetooth-value visually-hidden"
+                      type="radio"
+                      name="Bluetooth"
+                      value="off"
+                      id="BluetoothOff"
+                    />
+                    <label class="filter__bluetooth-no" for="BluetoothOff"
+                      >Нет</label
+                    >
+                  </li>
+                </ul>
+              </fieldset>
+              <!-- /fieldset -->
+              <button class="button filter__button-show" type="submit">
+                Показать
+              </button>
+            </form>
           </div>
-          <!-- /.filter-wrapper -->
-          <!-- Контейнер с каталогом -->
+          <!-- /.filter__wrapper -->
+          <!-- /Блок с фильтрами -->
           <div class="container-products">
             <!-- Шапка сортировки -->
-            <div class="sorting">
-              <span class="sorting__title">Cортировка:</span>
-              <ul class="sorting__list">
-                <li class="sorting__item">
-                  <a class="sorting__link sorting__link--active" href=""
-                    >По цене</a
-                  >
-                </li>
-                <li class="sorting__item">
-                  <a class="sorting__link" href="">По типу</a>
-                </li>
-                <li class="sorting__item">
-                  <a class="sorting__link" href="">По популярности</a>
-                </li>
-                <li class="sorting__item">
-                  <button class="sorting__link" href=""></button>
-                </li>
-                <li class="sorting__item">
-                  <button
-                    class="sorting__link sorting__link--active"
-                    href=""
-                  ></button>
-                </li>
-              </ul>
+            <div class="sorting__nav">
+              <div class="sorting">
+                <span class="sorting__title">Cортировка:</span>
+                <ul class="sorting__list">
+                  <li class="sorting__item">
+                    <a class="sorting__link sorting__link--active" href=""
+                      >По цене</a
+                    >
+                  </li>
+                  <li class="sorting__item">
+                    <a class="sorting__link" href="">По типу</a>
+                  </li>
+                  <li class="sorting__item">
+                    <a class="sorting__link" href="">По популярности</a>
+                  </li>
+                </ul>
+                <ul class="sorting__list-up">
+                  <li class="sorting__item-up">
+                    <a
+                      class="sorting__link"
+                      aria-label="кнопка сортировки меньше"
+                    ></a>
+                  </li>
+                  <li class="sorting__item-down">
+                    <a
+                      class="sorting__link sorting__link--active"
+                      aria-label="кнопка сортировки больше"
+                    ></a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <!-- / Шапка сортировки -->
             <!-- Блок с карточками товара -->
@@ -295,7 +299,7 @@
                     class="products__item-pic"
                     width="360"
                     height="380"
-                    src="img/Amateur_selfie_stick.jpg"
+                    src="img/amateur-selfie-stick.jpg"
                     alt="Любительская селфи-палка"
                   />
                   <div class="products__item-cart">
@@ -322,7 +326,7 @@
                     class="products__item-pic"
                     width="360"
                     height="380"
-                    src="img/Professional-selfie stick.jpg"
+                    src="img/professional-selfie-stick.jpg"
                     alt="Профессиональная селфи-палка"
                   />
                   <div class="products__item-cart">
@@ -350,7 +354,7 @@
                     class="products__item-pic"
                     width="360"
                     height="380"
-                    src="img/Unsinkable-selfie-stick.jpg"
+                    src="img/unsinkable-selfie-stick.jpg"
                     alt="Непотопляемая селфи-палка"
                   />
                   <div class="products__item-cart">
@@ -380,7 +384,7 @@
                     class="products__item-pic"
                     width="360"
                     height="380"
-                    src="img/Selfie-stick-Follow-me.jpg"
+                    src="img/selfie-stick-follow-me.jpg"
                     alt="Селфи-палка «Следуй за мной"
                   />
                   <div class="products__item-cart">
@@ -494,8 +498,7 @@
                   class="footer__social-pic"
                   width="32"
                   height="32"
-                  src="img/icon_facebook.svg"
-                  src="https://via.placeholder.com/32x32"
+                  src="img/icon-facebook.svg"
                   alt="facebook"
               /></a>
             </li>
@@ -505,8 +508,7 @@
                   class="footer__social-pic"
                   width="32"
                   height="32"
-                  src="img/icon_instagram.svg"
-                  src="https://via.placeholder.com/32x32"
+                  src="img/icon-instagram.svg"
                   alt="instagram"
               /></a>
             </li>
@@ -516,8 +518,7 @@
                   class="footer__social-pic"
                   width="32"
                   height="32"
-                  src="img/icon_witter.svg"
-                  src="https://via.placeholder.com/32x32"
+                  src="img/icon-witter.svg"
                   alt="twitter"
               /></a>
             </li>

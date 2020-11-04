@@ -28,6 +28,8 @@ contactUsClose.addEventListener("click", function (evt) {
 contactUsForm.addEventListener("submit", function (evt) {
   if (!userName.value || !userMail.value) {
     evt.preventDefault();
+    contactUsPopup.classList.remove("modal-error");
+    contactUsPopup.offsetWidth = contactUsPopup.offsetWidth;
     contactUsPopup.classList.add("modal-error");
     userName.classList.add("modal__user--error");
     userMail.classList.add("modal__mail--error");
@@ -48,28 +50,28 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-var mapLink = document.querySelector(".about__contacts-map");
-var mapPopup = document.querySelector(".modal-map");
-var mapClose = mapPopup.querySelector(".modal-close");
+// var mapLink = document.querySelector(".about__contacts-map");
+// var mapPopup = document.querySelector(".modal-map");
+// var mapClose = mapPopup.querySelector(".modal-close");
 
-mapLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  mapPopup.classList.add("modal-map--active");
-});
+// mapLink.addEventListener("click", function (evt) {
+//   evt.preventDefault();
+//   mapPopup.classList.add("modal-map--active");
+// });
 
-mapClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  mapPopup.classList.remove("modal-map--active");
-});
+// mapClose.addEventListener("click", function (evt) {
+//   evt.preventDefault();
+//   mapPopup.classList.remove("modal-map--active");
+// });
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (mapPopup.classList.contains("modal-map--active")) {
-      evt.preventDefault();
-      mapPopup.classList.remove("modal-map--active");
-    }
-  }
-});
+// window.addEventListener("keydown", function (evt) {
+//   if (evt.keyCode === 27) {
+//     if (mapPopup.classList.contains("modal-map--active")) {
+//       evt.preventDefault();
+//       mapPopup.classList.remove("modal-map--active");
+//     }
+//   }
+// });
 
 // Слайдер секции "Promo"
 
