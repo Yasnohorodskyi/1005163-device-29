@@ -50,28 +50,28 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-// var mapLink = document.querySelector(".about__contacts-map");
-// var mapPopup = document.querySelector(".modal-map");
-// var mapClose = mapPopup.querySelector(".modal-close");
+var mapLink = document.querySelector(".about__contacts-map");
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = mapPopup.querySelector(".modal-close");
 
-// mapLink.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   mapPopup.classList.add("modal-map--active");
-// });
+mapLink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.add("modal-map--active");
+});
 
-// mapClose.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   mapPopup.classList.remove("modal-map--active");
-// });
+mapClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.remove("modal-map--active");
+});
 
-// window.addEventListener("keydown", function (evt) {
-//   if (evt.keyCode === 27) {
-//     if (mapPopup.classList.contains("modal-map--active")) {
-//       evt.preventDefault();
-//       mapPopup.classList.remove("modal-map--active");
-//     }
-//   }
-// });
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (mapPopup.classList.contains("modal-map--active")) {
+      evt.preventDefault();
+      mapPopup.classList.remove("modal-map--active");
+    }
+  }
+});
 
 // Слайдер секции "Promo"
 
