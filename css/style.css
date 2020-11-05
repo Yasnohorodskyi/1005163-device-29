@@ -1,9 +1,4 @@
 /* Fonts */
-/* 
-* {
-  outline: 1px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -1px;
-} */
 
 @font-face {
   font-family: "Open Sans";
@@ -307,11 +302,13 @@ body {
   margin-left: 65px;
 }
 .header__list-search::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--basic-black);
+  opacity: 0.3;
 }
 
 .header__list-search:hover::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
+  color: var(--basic-black);
+  opacity: 0.6;
 }
 
 .header__list-button {
@@ -618,6 +615,10 @@ body {
   width: 36%;
 }
 
+.promo__info-table > td:nth-child(1) {
+  width: 28%;
+}
+
 .promo__info-features > td:nth-child(2) {
   padding-left: 17px;
   padding-right: 14px;
@@ -644,7 +645,7 @@ body {
 }
 
 .promo__info-benefits > td:nth-child(3) {
-  padding-left: 5px;
+  padding-left: 1px;
   padding-top: 14px;
 }
 
@@ -1185,7 +1186,7 @@ body {
 .filter__wrapper {
   display: flex;
   flex-direction: column;
-  background-color: #ebebeb;
+  background-color: var(--special-navs);
   flex-grow: 1;
 }
 
@@ -2077,7 +2078,7 @@ body {
   background-image: url("img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
-  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 10px 16px var(--special-hover);
 }
 
 .modal__write-us {
@@ -2258,7 +2259,7 @@ body {
   position: fixed;
   width: 960px;
   height: 560px;
-  box-shadow: 0px 9px 20px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 10px 16px var(--special-hover);
   z-index: 150;
 }
 
